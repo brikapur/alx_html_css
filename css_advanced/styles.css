@@ -1,203 +1,90 @@
-/* ============================
-   HEADER
-============================ */
-header {
-    position: absolute;       /* Makes the header float above the banner */
-    top: 0;
-    width: 100%;
-    padding: 20px 0;
-    z-index: 10;
-}
-
-nav {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav img {
-    height: 40px; /* Adjust logo size */
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 40px;
-}
-
-nav ul li a {
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #0b1e3c;
     color: white;
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
 }
 
-
-/* ============================
-   HERO / BANNER SECTION
-============================ */
-section:first-of-type {
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.7)
-    ),
-    url("./images/banner.jpg");  /* USE YOUR BANNER IMAGE */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    height: 100vh;  /* Full screen */
-
+/* HERO SECTION */
+.hero {
+    width: 100%;
+    height: 100vh;
+    background:
+        linear-gradient(
+            rgba(75,103,151,0.85),
+            rgba(96,123,170,0.85)
+        ),
+        url("images/Object.png") center/cover no-repeat;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     text-align: center;
-
-    color: white;
+    padding: 40px;
 }
 
-
-/* ============================
-   HERO TEXT
-============================ */
-section:first-of-type h1 {
-    font-size: 80px;
+.hero h1 {
+    font-size: 4rem;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
-section:first-of-type span {
-    font-size: 18px;
-    font-weight: 600;
-    margin: 0 12px;
-    letter-spacing: 2px;
-}
-
-
-/* ============================
-   REGISTER BUTTON
-============================ */
-section:first-of-type button {
-    margin-top: 40px;
-    padding: 15px 40px;
-
-    border: none;
-    border-radius: 30px;
-
-    font-size: 16px;
-    font-weight: 700;
-    color: white;
-
-    background-color: #C271FF;
-    cursor: pointer;
-}
-
-section:first-of-type button:hover {
-    opacity: 0.85;
-}
-
-
-/* ============================
-   SUBHEADING (Learn from the pros)
-============================ */
-section:first-of-type h2 {
-    margin-top: 120px;
-    font-size: 32px;
-    font-weight: 600;
-
-    background: linear-gradient(90deg, #C271FF, #ffffff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-/* ============================
-   INSTRUCTORS ROW
-============================ */
-section:first-of-type > div:last-child {
-    margin-top: 40px;
+.sub-links {
     display: flex;
-    gap: 60px;
+    gap: 25px;
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-bottom: 35px;
+    letter-spacing: 1px;
 }
 
-section:first-of-type > div:last-child div {
+.hero button {
+    padding: 14px 34px;
+    border: none;
+    border-radius: 40px;
+    background: #D89BE4;
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.learn-text {
+    font-size: 1.3rem;
+    margin-bottom: 60px;
+    color: #CFA7F5;
+}
+
+/* PROFILES */
+.profile-row {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 30px;
+}
+
+.profile {
     text-align: center;
 }
 
-section:first-of-type > div:last-child img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-section:first-of-type > div:last-child h3 {
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-section:first-of-type > div:last-child p {
-    font-size: 14px;
-    color: #e0e0e0;
-}
-/* TESTIMONIAL SECTION BACKGROUND */
-.testimonial {
-    background: linear-gradient(to bottom, #c06ed3, #bb59b3);
-    padding: 80px 0;
-    position: relative;
-}
-
-/* MAIN FLEX BOX */
-.testimonial-container {
-    width: 70%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-}
-
-/* BIG ROUND IMAGE */
-.testimonial-img {
-    width: 200px;
-    height: 200px;
+.profile img {
+    width: 95px;
+    height: 95px;
     border-radius: 50%;
     object-fit: cover;
+    border: 3px solid #fff;
 }
 
-/* TEXT SECTION */
-.testimonial-text blockquote {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: white;
-    margin-bottom: 20px;
+.profile h3 {
+    margin-top: 12px;
+    font-size: 1rem;
 }
 
-.testimonial-text h3 {
-    margin: 0;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: white;
-}
-
-.testimonial-text p {
-    margin: 5px 0;
-    color: white;
+.profile p {
     opacity: 0.8;
+    font-size: 0.85rem;
+    margin-top: -5px;
 }
 
-/* SMALL IMAGE AT BOTTOM CENTER */
-.small-icon {
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 3px solid white;
-}
 
