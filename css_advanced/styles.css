@@ -87,4 +87,61 @@ body {
     margin-top: -5px;
 }
 
+/* TESTIMONIAL SECTION BACKGROUND */
+.testimonial {
+    background: linear-gradient(to bottom, #c06ed3, #bb59b3);
+    padding: 80px 0;
+    position: relative;
+}
+
+/* MAIN FLEX BOX */
+.testimonial-container {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* BIG ROUND IMAGE */
+.testimonial-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* TEXT SECTION */
+.testimonial-text blockquote {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.testimonial-text h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+}
+
+.testimonial-text p {
+    margin: 5px 0;
+    color: white;
+    opacity: 0.8;
+}
+
+/* SMALL IMAGE AT BOTTOM CENTER */
+.small-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid white;
+}
 
