@@ -536,3 +536,56 @@ body {
     gap: 30px;
   }
 }
+/*footer*/
+footer {
+  background-color: #071629;   /* same dark footer color we used before */
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.footer-top img {
+  height: 50px; /* adjust to match your logo size */
+}
+
+.socials {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.socials i {
+  font-size: 18px;      /* icon size */
+  background: white;    /* white circle background */
+  color: #071629;       /* dark color logo (like original website) */
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;   /* makes perfect circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.socials i:hover {
+  background: #ff5e5e;   /* change to your accent color */
+  color: white;
+  transform: scale(1.1);
+}
+footer p {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-top: 10px;
+}
